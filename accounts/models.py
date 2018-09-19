@@ -8,6 +8,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=20)
     phone_number = models.CharField(max_length=20)
     notes = models.TextField()
+    
 
     def __str__(self):
         return self.first_name

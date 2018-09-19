@@ -5,13 +5,13 @@ class Customer(models.Model):
     user_id = models.ForeignKey(User)
 
     def __str__(self):
-        return self.id.first_name
+        return self.user_id.first_name
 
 class Agent(models.Model):
     user_id = models.ForeignKey(User)
 
     def __str__(self):
-        return self.id.first_name
+        return self.user_id.first_name
 
 class Vehicle(models.Model):
     plate_no = models.CharField(max_length=50)
